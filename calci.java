@@ -1,4 +1,5 @@
 //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
+//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
 
 class calci
 {
@@ -9,6 +10,9 @@ int y=20;
 int mult=multiply(int x,int y);  //adding multiply function
 
 int add=addition(int x,int y):   //adding addition function
+
+int sub=subtraction(int x,int y);   //adding subtraction function
+
 
 }
 
@@ -23,7 +27,9 @@ return a+b;
 }
 
 
-
+static int subtraction(int a,int b){
+return a-b;
+}
 
 
 
