@@ -13,6 +13,8 @@ int add=addition(int x,int y):   //adding addition function
 
 int sub=subtraction(int x,int y);   //adding subtraction function
 
+int div=divison(int x,int y);    //adding divison function
+
 
 }
 
@@ -31,7 +33,9 @@ static int subtraction(int a,int b){
 return a-b;
 }
 
-
+static int divison(int a,int b){
+return a/b;
+}
 
 
 
