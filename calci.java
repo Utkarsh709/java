@@ -1,6 +1,7 @@
 //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
 //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
 //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
+//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
 
 class calci{
 
@@ -20,7 +21,7 @@ int mod=modulus(int x,int y);   //adding modulus function
 
 int sq=square(int x);    //adding square function
 
-
+int cu=cube(int x);      //adding cube function
 
 }
 
@@ -49,6 +50,11 @@ return a%b;
 
 static int square(int a){
 return a*a;
+}
+
+
+static int cube(int a){
+a*a*a;
 }
 
 
