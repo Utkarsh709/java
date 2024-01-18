@@ -23,6 +23,9 @@ int sq=square(int x);    //adding square function
 
 int cu=cube(int x);      //adding cube function
 
+int pr=percent(int x);   //adding percentage function
+
+
 }
 
 
@@ -52,10 +55,12 @@ static int square(int a){
 return a*a;
 }
 
-
 static int cube(int a){
-a*a*a;
+  return a*a*a;
 }
 
+static int percent(int a){
+return a/100;
+}
 
 }
