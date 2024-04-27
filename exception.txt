@@ -1,0 +1,65 @@
+
+1)Try and Catch Block:
+public class Example {
+    public static void main(String[] args) {
+        try {
+            int[] arr = new int[5];
+            System.out.println(arr[6]); // Trying to access index out of bounds
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index is out of bounds.");
+        }
+    }
+}
+
+
+2)Try catch finally block:
+public class Example {
+    public static void main(String[] args) {
+        try {
+            int result = divide(10, 0); // Trying to divide by zero
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            System.out.println("Finally block executed.");
+        }
+    }
+    
+    public static int divide(int a, int b) {
+        return a / b;
+    }
+}
+
+
+3)multiple catch block:
+public class Example {
+    public static void main(String[] args) {
+        try {
+            String str = null;
+            System.out.println(str.length()); // Trying to invoke a method on null
+        } catch (NullPointerException e) {
+            System.out.println("Error: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("An unexpected error occurred.");
+        }
+    }
+}
+
+
+4)custom exception:
+class MyException extends Exception {
+    public MyException(String message) {
+        super(message);
+    }
+}
+
+public class Example {
+    public static void main(String[] args) {
+        try {
+            throw new MyException("This is a custom exception.");
+        } catch (MyException e) {
+            System.out.println("Caught my exception: " + e.getMessage());
+        }
+    }
+}
+
